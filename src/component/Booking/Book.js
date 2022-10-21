@@ -11,6 +11,7 @@ const Book = ({order}) => {
     setProcess(order);
   };
 
+  // handle payment
   const handlePayment = (paymentId) => {
      const orderDetails = {
       ...loggedInUser,
