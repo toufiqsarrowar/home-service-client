@@ -1,3 +1,6 @@
+import {initializeApp} from 'firebase/app'
+import { getAuth } from 'firebase/auth';
+
 const firebaseConfig = {
     apiKey: "AIzaSyCrk7o8Z_hpauAjZsU1iZw7Fegj3Pi1G9M",
     authDomain: "homesrvice-bd.firebaseapp.com",
@@ -7,4 +10,7 @@ const firebaseConfig = {
     appId: "1:432647321638:web:75a1ab193ce10b26c00ee7"
   };
 
-  export default firebaseConfig;
+  const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+  export default auth;
